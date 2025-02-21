@@ -1,0 +1,123 @@
+/* style.css */
+body {
+    background-color: lightblue;
+    overflow: hidden;
+}
+
+.train-container {
+    position: relative;
+    width: 100%;
+    height: 250px; /* Increased height for city signs */
+    margin-top: 50px;
+}
+
+.train {
+    position: absolute;
+    top: 70%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 300px; /* Longer train */
+    height: 80px; /* Slightly smaller train */
+    background-color: #f00; /* Red - DB color */
+    border-radius: 10px;
+    animation: trainMove 15s linear infinite; /* Slower animation */
+}
+
+.windows {
+    position: absolute;
+    top: 15px; /* Adjusted window position */
+    left: 15px;
+    display: flex;
+    gap: 5px; /* Smaller gap */
+}
+
+.window {
+    width: 25px; /* Smaller windows */
+    height: 25px;
+    background-color: lightgray;
+    border-radius: 3px;
+}
+
+.lights {
+    position: absolute;
+    top: 55px;
+    left: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+.light {
+    width: 8px;
+    height: 8px;
+    background-color: white; /* White headlights */
+    border-radius: 50%;
+    box-shadow: 0 0 3px white;
+}
+
+.chimney {
+    /* ... */
+}
+
+.smoke {
+    /* ... */
+}
+
+@keyframes puff {
+    /* ... */
+}
+
+@keyframes trainMove {
+    0% {
+        right: -350px;
+    } /* Start further off-screen */
+    100% {
+        right: calc(100% + 50px);
+    }
+}
+
+.tracks {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background-color: #888;
+    background-image: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 10px,
+        black 10px,
+        black 20px
+    );
+}
+
+.direction {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.city-sign {
+    position: absolute;
+    top: 35%;
+
+    transform: translateY(-50%);
+    background-color: white;
+    padding: 5px 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.frankfurt {
+    left: 20px;
+}
+
+.berlin {
+    right: 20px;
+}
