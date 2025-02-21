@@ -54,13 +54,25 @@ Below is a conceptual diagram showing the key components and their layout:
 Below is a mockup of what the animation looks like. (Replace the link below with an actual screenshot image if available.)
 
 ![CSS Train Animation Screenshot](screenshot.png)
+## Video Demonstration
+
+Watch the demonstration video below to see the CSS Train Animation in action:
+
+
+<div align="center">
+  <video width="640" height="360" controls>
+    <source src="video.mov" type="video/quicktime">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
 
 ## How to Run
 
 1. Clone or download the repository to your computer.
 2. Open the **index.html** file in your favorite web browser.
 3. Watch the train move continuously across the screen!
-4. Use python3 -m http.server 8000 to run it on a local server.
+4. Use the command `python3 -m http.server 8000` to run it on a local server.
 
 ## Customizations
 
